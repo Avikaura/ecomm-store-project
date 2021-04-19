@@ -3,373 +3,319 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description of this site for SEO]">
-    <meta name="author" content="[Your Name]">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Baggy Store
+    </title>
+    <meta name="description" content="Baggy Store is one of the leading E-commerce place where you can get great deals on handbags with good quality and brands">
+    <meta name="author" content="Avi Kaura">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html" class="logo">Hello World<!-- Site logo --></a>
 
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <button type="button" class="nav-toggle">
-        <span class="material-icons">menu</span>
-      </button>
-      <nav aria-label="Primary" class="navigation">
-        <ul class="menu">
-          <li><a href="#">Shop</a>
-            <ul class="submenu">
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+    <!--HEADER SECTION DISPLAYING LOGO, MENU, SEARCH, PRODUCT DESCRIPTION LISTS-->
+   
+    <header class="header-part">
+    
+        <!--MENU/LOGO-->
+
+        <section class="top-bar-menu">
+
+        <ul class="menu-logo">
+            <li>
+                <img src="/img/svgs/list.svg" alt="The menu bar" class="set-menu">
+            </li>
+            <li><img src="/img/svgs/heart.svg" alt="To add product in favourites" class="set-fav" ></li>
+            <li>
+                <a href="index.html"><img src="/img/logo.svg" alt="The webstore is for handbags" class="logo"></a>
+            </li>
+            <li>
+                <img src="/img/svgs/user.svg" alt="user-profile" class="user-contact">
+            </li>
+            <li>
+                <img src="/img/svgs/shopping-cart.svg" alt="Add to bag" class="cart">
+            </li>
         </ul>
-      </nav>
+        </section>
 
-      <!-- Search for a product (non-functional) -->
-      <form class="search">
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
+        <!--SEARCH BAR-->
 
-      <!-- Additional links -->
-      <ul class="your-products">
-        <li><a href="#"><span class="material-icons" aria-label="Favourites">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons" aria-label="Items in your cart">shopping_cart</span></a></li>
-      </ul>
+        <section class="search-bar-menu">
+
+            <a href="index.html"><img src="/img/logo.svg" alt="The webstore is for handbags" class="logo1"></a>
+
+        
+            <form>
+                <input type="text" placeholder="         search 'spring edition' here">
+            </form>
+
+            <ul class="menu">
+                <li><a href="#" class="menu-link">new</a></li>
+                <li><a href="#" class="menu-link">women</a></li>
+                <li><a href="#" class="menu-link">men</a></li>
+                <li><a href="#" class="menu-link">profile</a></li>
+                <li><a href="#" class="menu-link">contact</a></li>
+                <li><a href="#" class="menu-link">sign in</a></li>
+
+            </ul>
+
+    </section>  
+
+
+        <!--BAG STYLE HEADING-->
+
+        <section class="heading">
+            <h2>isolated handbags</h2>
+            <h3>(102 products)</h3>
+
+        </section>
+
+        <!--FILTER BLOCK-->
+
+        <section class="filter">
+
+          <legend class="legend-head">colors</legend>
+          <legend class="legend-head">sizes</legend>
+          <legend class="legend-head">ratings</legend>
+          <legend class="legend-head">collections</legend>
+          <legend class="legend-head">materials</legend>
+
+         <legend class="sort">sort</legend>
+         </section>
+
     </header>
 
-    <main class="products">
-      <header class="heading">
-        <h1>Sale on [Category Name]</h1>
-      </header>
 
-      <!-- Filtering product form -->
-      <form class="filters">
-        <h2>Filters</h2>
 
-        <div class="filter-options">
-          <fieldset>
-            <legend>Colour</legend>
-            <ul class="filter-list">
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol class="filter-list">
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-          <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol class="filter-list">
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+     <!--MAIN BODY SECTION DISPLAYING DIFFERENT PRODUCT LISTS FOR HANDBAGS-->
+
+     
+         
+
+        <!-- THE 12 PRODUCTS-->
+
+        <section class="products-body">
+
+
+            <!--PRODUCT 1-->
+
+            <article class="product">
+              <a href="product.html" target="_blank"><img src="/img/products/3.jpg" alt="" class="product-img"></a>  
+                <div class="hover-text">quick view</div>
+                <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+                
+                <h4>pochette    
+                    <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                    <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                    <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                    <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span></h4>
+            <data value="479.85" class="price">$479.85</data><br/>
+            <label class="container1">
+                <input type="checkbox">
+                <span class="check1"></span>
                 </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+             <label class="container2">
+                <input type="checkbox">
+                <span class="check2"></span>
+              </label>
+               </article>
+
+              
+              
+               <!--PRODUCT 2-->
+       
+               <article class="product">
+                  <a href="product.html" target="_blank"><img src="/img/products/15.jpg" alt="" class="product-img"></a> 
+                   <div class="hover-text">quick view</div>
+                   <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+                   <h4>passy</h4>
+            <data value="235.50" class="price">$235.50</data>
+                  </article>
+
+
+                  <!--PRODUCT 3-->
+
+                  <article class="product">
+                    <a href="product.html" target="_blank"><img src="/img/products/41.jpg" alt="" class="product-img"></a>
+                    <div class="hover-text">quick view</div>
+                    <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+                    <h4>mini-tote</h4>
+             <data value="200.00" class="price">$200.00</data>
+                   </article>
+
+     
+
+            <!--PRODUCT 4-->
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/29.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>tote
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/rating.svg" alt="ratings" class="rating-set"></span>
+            </h4>
+            <data value="350" class="price">$350.00</data>
+           </article>
+
+
+           <!--PRODUCT 5-->
+
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/50.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>mini douphine </h4>
+            <data value="250" class="price">$250.00</data>
+           </article>
+      
+
+
+            <!--PRODUCT 6-->
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/16.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>vanity
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+            </h4>
+            <data value="455" class="price">$455.00</data>
+           </article>
+
+
+           <!--PRODUCT 7-->
+
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/8.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>palm springs</h4>
+            <data value="125.67" class="price">$125.67</data><br/>
+            <label class="container3">
+                <input type="checkbox">
+                <span class="check3"></span>
                 </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-            </ol>
-          </fieldset>
+             <label class="container4">
+                <input type="checkbox">
+                <span class="check4"></span>
+              </label>
+           </article>
+     
+
+
+            <!--PRODUCT 8-->
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/4.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>graceful</h4>
+            <data value="344.50" class="price">$344.50</data>
+           </article>
+
+
+            <!--PRODUCT 9-->
+
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/40.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>carry it
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/rating.svg" alt="ratings" class="rating-set"></span>
+            </h4>
+            <data value="340" class="price">$340.00</data>
+           </article>
+
+           <!--PRODUCT 10-->
+
+           <article class="product">
+            <a href="product.html" target="_blank"><img src="/img/products/55.jpg" alt="" class="product-img"></a>
+            <div class="hover-text">quick view</div>
+            <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+            <h4>pithu
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+                <span><img src="/img/svgs/rating.svg" alt="ratings" class="rating-set"></span>
+            </h4>
+            <data value="150" class="price">$150.00</data>
+           </article>
+
+             <!--PRODUCT 11-->
+
+             <article class="product">
+                <a href="product.html" target="_blank"><img src="/img/products/56.jpg" alt="" class="product-img"></a>
+                <div class="hover-text">quick view</div>
+                <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+                <h4>savage pink</h4>
+                <data value="425" class="price">$425.50</data>
+               </article>
+    
+               <!--PRODUCT 12-->
+    
+               <article class="product">
+                <a href="product.html" target="_blank"><img src="/img/products/58.jpg" alt="" class="product-img"></a>
+                <div class="hover-text">quick view</div>
+                <img src="/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+                <h4>clutch</h4>
+                <data value="230" class="price">$230.00</data>
+               </article>
+
+                   <!--PAGINATION AT THE END OF MAIN PART-->
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
         </div>
-        <fieldset>
-          <label for="sort">Show</label>
-          <select name="sort" id="sort">
-            <option value="price-high">Price, highest to lowest</option>
-            <option value="price-low">Price, lowest to highest</option>
-            <option value="newest">Newest releases</option>
-          </select>
-        </fieldset>
-      </form>
+        </section>
 
-      <section class="results">
-        <h2 class="subheading">Results</h2>
+   
 
-        <!-- Product 1 -->
-        <article class="product">
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
+    
 
-        <!-- Product 2 -->
-        <article class="product">
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
 
-        <!-- Product 3 -->
-        <article class="product">
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
-  
-        <!-- Product 4 -->
-        <article class="product">
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
 
-        <!-- Product 5 -->
-        <article class="product">
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
+         <!--FOOTER PART DISPLAYING ALL CONTACT WAYS TO THIS STORE "BAGGY"-->
 
-        <!-- Product 6 -->
-        <article class="product">
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
-            <a href="#">see more</a>
-          </header>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-          </form>
-          <footer>
-            <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-            <button type="button"><span class="material-icons">favorite</span></button>
-          </footer>
-        </article>
-      </section>
+         <footer class="footer-part">
+           <a href="index.html" class="href-footer"><h1>baggy store</h1></a> 
+            <h6>contact</h6>
 
-      <nav aria-label="Pagination" class="pagination">
-        <p>1-6 of 23 products found</p>
-        <ol class="pages">
-          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-          <li><a href="#" aria-label="Page 4">4</a></li>
-          <li><a href="#" aria-label="Page 5">5</a></li>
-        </ol>
-      </nav>
-    </main>
+        <section class="social-icons">
 
-    <footer class="page-footer">
-      <ul class="social">
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
-      </ul>
-      <nav aria-label="Legal">
-        <ul class="legal">
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <p class="copyright">&copy; Copyright, 1991.</p>
-    </footer>
+            <ul class="media-contact">
+                <li><a href="#"><img src="/img/svgs/facebook.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/instagram.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/twitter.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/whatsapp.svg" alt="facebook" class="icon-set"></a></li>
 
-  </body>
-</html>
+                </ul>
+
+                <ul class="footer-contact">
+
+                <li><span class="contact-set">email</span></li>
+                <li><span class="contact-set">apps</span></li>
+                <li><span class="contact-set">follow us</span></li>
+                <li><span class="contact-set">careers</span></li>
+                <li><span class="contact-set">sitemap</span></li>
+                <li><span class="contact-set">ship worldwide</span></li>
+                <li><span class="contact-set">legal notice</span></li>
+            </ul>
+
+
+
+        </section>
+
+        <h5><b>&copy;</b> worldwide shipping</h5>
+         </footer>
