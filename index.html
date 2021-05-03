@@ -11,6 +11,10 @@
   </head>
   <body>
 
+
+    
+   
+
     <!--HEADER SECTION DISPLAYING LOGO, MENU, SEARCH, PRODUCT DESCRIPTION LISTS-->
    
     <header class="header-part">
@@ -21,17 +25,26 @@
 
         <ul class="menu-logo">
             <li>
-                <img src="/ecomm-store-project/img/svgs/list.svg" alt="The menu bar" class="set-menu">
+                <img src="/img/svgs/list.svg" alt="The menu bar" class="set-menu" onclick="myFunction()">
+                <div class="myLinks" id="myLinks">
+                    <a href="#">new arrivals</a>
+                    <a href="#">women</a>
+                    <a href="#">men</a>
+                    <a href="#">profile</a>
+                    <a href="#">contact</a>
+                    <a href="#">sign in</a>
+                     
+                  </div>
             </li>
-            <li><img src="/ecomm-store-project/img/svgs/heart.svg" alt="To add product in favourites" class="set-fav" ></li>
+            <li><img src="/img/svgs/heart.svg" alt="To add product in favourites" class="set-fav" ></li>
             <li>
-                <a href="index.html"><img src="/ecomm-store-project/img/logo.svg" alt="The webstore is for handbags" class="logo"></a>
+                <a href="index.html"><img src="/img/logo.svg" alt="The webstore is for handbags" class="logo"></a>
             </li>
             <li>
-                <img src="/ecomm-store-project/img/svgs/user.svg" alt="user-profile" class="user-contact">
+                <img src="/img/svgs/user.svg" alt="user-profile" class="user-contact">
             </li>
             <li>
-                <img src="/ecomm-store-project/img/svgs/shopping-cart.svg" alt="Add to bag" class="cart">
+                <img src="/img/svgs/shopping-cart.svg" alt="Add to bag" class="cart">
             </li>
         </ul>
         </section>
@@ -40,20 +53,69 @@
 
         <section class="search-bar-menu">
 
-            <a href="index.html"><img src="/ecomm-store-project/img/logo.svg" alt="The webstore is for handbags" class="logo1"></a>
+            <a href="index.html"><img src="/img/logo.svg" alt="The webstore is for handbags" class="logo1"></a>
 
         
             <form>
-                <input type="text" placeholder="         search 'spring edition' here">
+                <input type="search" placeholder="         search 'spring edition' here" autocomplete="off" id="filterName">
             </form>
 
             <ul class="menu">
-                <li><a href="#" class="menu-link">new</a></li>
-                <li><a href="#" class="menu-link">women</a></li>
-                <li><a href="#" class="menu-link">men</a></li>
-                <li><a href="#" class="menu-link">profile</a></li>
-                <li><a href="#" class="menu-link">contact</a></li>
-                <li><a href="#" class="menu-link">sign in</a></li>
+                <li><a href="#" class="menu_link">new</a>
+                <ul class="menu2">
+                    <li><a href="#" class="menu2_link">
+                        new arrivals</a></li>
+                    <li><a href="#" class="menu2_link">
+                           collections</a></li>
+                    <li><a href="#" class="menu2_link">
+                        spring sale</a></li>
+                    <li><a href="#" class="menu2_link">
+                        brands</a></li>
+                </ul></li>
+                <li><a href="#" class="menu_link">women</a>
+                    <ul class="menu2">
+                        <li><a href="#" class="menu2_link">
+                            jewelry</a></li>
+                        <li><a href="#" class="menu2_link">
+                               accessories</a></li>
+                        <li><a href="#" class="menu2_link">
+                            shoes</a></li>
+                        <li><a href="#" class="menu2_link">
+                            perfumes</a></li>
+                    </ul></li>
+                </li>
+                <li><a href="#" class="menu_link">men</a>
+                    <ul class="menu2">
+                        <li><a href="#" class="menu2_link">
+                            wallets</a></li>
+                        <li><a href="#" class="menu2_link">
+                               accessories</a></li>
+                        <li><a href="#" class="menu2_link">
+                            shoes</a></li>
+                        <li><a href="#" class="menu2_link">
+                            perfumes</a></li>
+                    </ul></li>
+                </li>
+                <li><a href="#" class="menu_link">profile</a>
+                    <ul class="menu2">
+                        <li><a href="#" class="menu2_link">
+                            my account</a></li>
+                        <li><a href="#" class="menu2_link">
+                               orders</a></li>
+                       
+                    </ul></li>
+                </li>
+                <li><a href="#" class="menu_link">contact</a></li>
+                <li><a href="#" class="menu_link">sign in</a>
+                    <ul class="menu2">
+                        <li><a href="#" class="menu2_link">
+                            create account</a></li>
+                        <li><a href="#" class="menu2_link">
+                               sign up</a></li>
+                        <li><a href="#" class="menu2_link">
+                            by google</a></li>
+                    </ul></li>
+                </li>
 
             </ul>
 
@@ -78,8 +140,11 @@
           <legend class="legend-head">collections</legend>
           <legend class="legend-head">materials</legend>
 
-         <legend class="sort">sort</legend>
-         </section>
+        
+        
+          <legend class="sort">sort</legend>
+        </section>
+      
 
     </header>
 
@@ -92,182 +157,22 @@
 
         <!-- THE 12 PRODUCTS-->
 
-        <section class="products-body">
+        <section class="products-body" id="productTable">
 
 
-            <!--PRODUCT 1-->
+            <!--PRODUCT 1
 
-            <article class="product">
-              <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/3.jpg" alt="" class="product-img"></a>  
-                <div class="hover-text">quick view</div>
-                <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-                
-                <h4>pochette    
-                    <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                    <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                    <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                    <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span></h4>
-            <data value="479.85" class="price">$479.85</data><br/>
-            <label class="container1">
-                <input type="checkbox">
-                <span class="check1"></span>
-                </label>
-             <label class="container2">
-                <input type="checkbox">
-                <span class="check2"></span>
-              </label>
-               </article>
+            -------ADDED TO JS--------
 
+            PRODUCT 12--> 
               
-              
-               <!--PRODUCT 2-->
-       
-               <article class="product">
-                  <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/15.jpg" alt="" class="product-img"></a> 
-                   <div class="hover-text">quick view</div>
-                   <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-                   <h4>passy</h4>
-            <data value="235.50" class="price">$235.50</data>
-                  </article>
-
-
-                  <!--PRODUCT 3-->
-
-                  <article class="product">
-                    <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/41.jpg" alt="" class="product-img"></a>
-                    <div class="hover-text">quick view</div>
-                    <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-                    <h4>mini-tote</h4>
-             <data value="200.00" class="price">$200.00</data>
-                   </article>
-
-     
-
-            <!--PRODUCT 4-->
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/29.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>tote
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/rating.svg" alt="ratings" class="rating-set"></span>
-            </h4>
-            <data value="350" class="price">$350.00</data>
-           </article>
-
-
-           <!--PRODUCT 5-->
-
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/50.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>mini douphine </h4>
-            <data value="250" class="price">$250.00</data>
-           </article>
-      
-
-
-            <!--PRODUCT 6-->
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/16.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>vanity
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-            </h4>
-            <data value="455" class="price">$455.00</data>
-           </article>
-
-
-           <!--PRODUCT 7-->
-
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/8.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>palm springs</h4>
-            <data value="125.67" class="price">$125.67</data><br/>
-            <label class="container3">
-                <input type="checkbox">
-                <span class="check3"></span>
-                </label>
-             <label class="container4">
-                <input type="checkbox">
-                <span class="check4"></span>
-              </label>
-           </article>
-     
-
-
-            <!--PRODUCT 8-->
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/4.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>graceful</h4>
-            <data value="344.50" class="price">$344.50</data>
-           </article>
-
-
-            <!--PRODUCT 9-->
-
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/40.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>carry it
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/rating.svg" alt="ratings" class="rating-set"></span>
-            </h4>
-            <data value="340" class="price">$340.00</data>
-           </article>
-
-           <!--PRODUCT 10-->
-
-           <article class="product">
-            <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/55.jpg" alt="" class="product-img"></a>
-            <div class="hover-text">quick view</div>
-            <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-            <h4>pithu
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-                <span><img src="/ecomm-store-project/img/svgs/rating.svg" alt="ratings" class="rating-set"></span>
-            </h4>
-            <data value="150" class="price">$150.00</data>
-           </article>
-
-             <!--PRODUCT 11-->
-
-             <article class="product">
-                <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/56.jpg" alt="" class="product-img"></a>
-                <div class="hover-text">quick view</div>
-                <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-                <h4>savage pink</h4>
-                <data value="425" class="price">$425.50</data>
-               </article>
-    
-               <!--PRODUCT 12-->
-    
-               <article class="product">
-                <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/58.jpg" alt="" class="product-img"></a>
-                <div class="hover-text">quick view</div>
-                <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
-                <h4>clutch</h4>
-                <data value="230" class="price">$230.00</data>
-               </article>
-
+             
                    <!--PAGINATION AT THE END OF MAIN PART-->
 
+      
+        </section>
+
+   
         <div class="pagination">
             <a href="#">&laquo;</a>
             <a href="#">1</a>
@@ -278,10 +183,6 @@
             <a href="#">6</a>
             <a href="#">&raquo;</a>
         </div>
-        </section>
-
-   
-
     
 
 
@@ -295,10 +196,10 @@
         <section class="social-icons">
 
             <ul class="media-contact">
-                <li><a href="#"><img src="/ecomm-store-project/img/svgs/facebook.svg" alt="facebook" class="icon-set"></a></li>
-                <li><a href="#"><img src="/ecomm-store-project/img/svgs/instagram.svg" alt="facebook" class="icon-set"></a></li>
-                <li><a href="#"><img src="/ecomm-store-project/img/svgs/twitter.svg" alt="facebook" class="icon-set"></a></li>
-                <li><a href="#"><img src="/ecomm-store-project/img/svgs/whatsapp.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/facebook.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/instagram.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/twitter.svg" alt="facebook" class="icon-set"></a></li>
+                <li><a href="#"><img src="/img/svgs/whatsapp.svg" alt="facebook" class="icon-set"></a></li>
 
                 </ul>
 
@@ -319,3 +220,15 @@
 
         <h5><b>&copy;</b> worldwide shipping</h5>
          </footer>
+
+           
+
+
+         <!-------SCRIPT FILE------->
+         
+         <script src="js/filter.js"></script>
+         <script src="js/products.js"></script>
+        
+
+         </body>
+         </html>
