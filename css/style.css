@@ -134,7 +134,7 @@ input[type=search] {
     color: grey;
     font-style: italic;
     background-color: white;
-    background-image:url('/ecomm-store-project/img/svgs/magnifying-glass.svg');
+    background-image:url('/img/svgs/magnifying-glass.svg');
     background-size: 20px;
     background-position: 20px 20px; 
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ h3{
     font-size: 14px;
     text-transform: capitalize;
     border-left: 2px solid #FFE5EB ;
-    background-image: url('/ecomm-store-project/img/svgs/sort-by-attributes.svg');
+    background-image: url('/img/svgs/sort-by-attributes.svg');
     background-size: 20px;
     background-position: 20px 20px; 
     background-repeat: no-repeat;
@@ -377,9 +377,10 @@ input[type=checkbox]{
     flex-wrap: wrap;*/
     display:grid;
 grid-template-columns: repeat(2, 1fr);
-max-width: 100%;
-margin: 0 20px auto 20px;
-grid-gap: 2.6em;
+max-width: 25em;
+margin: auto;
+grid-gap:10px;
+
 }
 .product{
    max-width: 100%;
@@ -630,6 +631,8 @@ h5{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 30em;
 }
 .single-product{
    /* display: flex;
@@ -805,12 +808,16 @@ input[type=button]:hover{
 
 }
 .para-list{
-    margin-left: -2.5em;
+    margin-left: -1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     color:black;
     font-size: 16px;
     font-weight: lighter;
+
+}
+
+.para-list li{
     list-style-type: disc;
 }
 
@@ -830,7 +837,7 @@ input[type=button]:hover{
 
 /*MEDIA QUERIES FOR DESKTOP VIEW*/
 
-@media only screen and (min-width:550px){
+@media only screen and (min-width:680px){
 
 .product-img{
     width: 260px;
@@ -843,9 +850,15 @@ input[type=button]:hover{
     }
 .products-body{
     grid-template-columns: repeat(3, 1fr);
+    max-width:50em;
+
+
 }
 
-
+.main{
+    max-width:60em;
+    margin: auto;
+}
 
 }
 
@@ -866,6 +879,7 @@ input[type=button]:hover{
     }
     .products-body{
         grid-template-columns: repeat(4, 1fr);
+        max-width:70em;
     }
     .product-img{
         width: 275px;
@@ -922,9 +936,13 @@ input[type=button]:hover{
 }
 .main{
     flex-wrap: nowrap;
+    max-width: 70em;
+    margin: auto;
 }
 
 
     
 }
+
+
 
