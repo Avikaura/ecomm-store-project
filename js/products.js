@@ -1,4 +1,5 @@
 
+
 //-- STORING PRODUCTS INTO ARRAY
 const myProducts =[
 
@@ -101,24 +102,17 @@ const productTable = document.querySelector('.products-body')
         products.classList.add('pro')
        products.innerHTML=
        `<article class="product">
-       <a href="product.html" target="_blank"><img src="/ecomm-store-project/img/products/${pro.bagImage}" alt="${pro.title}" class="product-img"></a>  
+       <a href="product.html" target="_blank"><img src="img/products/${pro.bagImage}" alt="${pro.title}" class="product-img"></a>  
          <div class="hover-text">quick view</div>
-         <img src="/ecomm-store-project/img/svgs/favourite.svg" alt="fav" class="fav-icon">
+         <img src="img/svgs/favourite.svg" alt="fav" class="fav-icon">
          
          <h4>${pro.bagName}    
-             <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-             <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-             <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span>
-             <span><img src="/ecomm-store-project/img/svgs/star.svg" alt="ratings" class="rating-set"></span></h4>
+             <span><img src="img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+             <span><img src="img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+             <span><img src="img/svgs/star.svg" alt="ratings" class="rating-set"></span>
+             <span><img src="img/svgs/star.svg" alt="ratings" class="rating-set"></span></h4>
      <data value="479.85" class="price">$${pro.price}</data><br/>
-      <label class="container2">
-         <input type="checkbox">
-         <span class="check2"></span>
-       </label>
-       <label class="container3">
-       <input type="checkbox">
-       <span class="check3"></span>
-       </label>
+      
         </article>`
          
         productTable.appendChild(products);
@@ -192,6 +186,20 @@ filterName.addEventListener('input', function(event){
    
     
    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
